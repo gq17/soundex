@@ -1,11 +1,14 @@
 package soundex
 
-type Distribution struct{
+type Distribution struct {
 	dtype string
+	seed  string
 }
 
-func NewDistribution() *Distribution {
-	return &Distribution{}
+func NewDistribution(t string) *Distribution {
+	return &Distribution{
+		dtype: t,
+	}
 }
 
 func (dist *Distribution) GetIntNumber() int {
