@@ -6,12 +6,16 @@ import (
 	"time"
 )
 
-var (
-	dist = NewDistribution()
+const (
+	GAUSSIAN = "gaussian"
 )
 
-func GetIntNumber() int {
-	return dist.GetIntNumber()
+var (
+	dist = NewDistribution(GAUSSIAN)
+)
+
+func GetGaussianIntNumber() int {
+	return dist.GetGaussianIntNumber()
 }
 
 func GetFloatNumber() float32 {

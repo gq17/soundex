@@ -11,7 +11,7 @@ func NewDistribution(t string) *Distribution {
 	}
 }
 
-func (dist *Distribution) GetIntNumber() int {
+func (dist *Distribution) GetGaussianIntNumber() int {
 	return 0
 }
 
