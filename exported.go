@@ -15,11 +15,7 @@ var (
 )
 
 func GetIntGaussianNumber() int {
-	return dist.GetGaussianIntNumber()
-}
-
-func GetFloatNumber() float32 {
-	return dist.GetFloatNumber()
+	return dist.GetIntGaussianNumber()
 }
 
 func GetExponentialNumber(lambda float64) float64 {
