@@ -14,7 +14,7 @@ var (
 	dist = NewDistribution(GAUSSIAN)
 )
 
-func GetGaussianIntNumber() int {
+func GetIntGaussianNumber() int {
 	return dist.GetGaussianIntNumber()
 }
 
@@ -30,7 +30,7 @@ func GetExponentialNumber(lambda float64) float64 {
 	return (-1.0 / lambda) * math.Log(rand.Float64())
 }
 
-func GetGaussianNumber(mean float64, cov float64) float64 {
+func GetFloatGaussianNumber(mean float64, cov float64) float64 {
 	m, n := rand.Float64(), rand.Float64()
 	r := math.Sqrt(-2 * math.Log(n))
 	t := 2 * math.Pi * m
