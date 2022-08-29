@@ -1,3 +1,3 @@
 module github.com/gq17/soundex
 
-go 1.13
+go 1.14
